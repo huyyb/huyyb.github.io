@@ -1,13 +1,13 @@
 # Huy Bui
 
-> Senior / Lead software engineer based in Ho Chi Minh City, Vietnam. Ten years building web platforms end to end across e-commerce, healthcare and insurance.
+> Technical consultant & Full-stack engineer based in Ho Chi Minh City, Vietnam. Ten years building web platforms end to end across e-commerce, healthcare and insurance.
 
 This site is a single-page portfolio. All content below is also on the live page at https://heybui.github.io/ — this file is a plain-text summary for language models and other automated readers.
 
 ## Profile
 
 - Name: Huy Bui
-- Role: Senior Software Engineer / Squad Lead
+- Role: Senior / Lead Software Engineer
 - Location: Binh Thanh, Ho Chi Minh City, Vietnam — UTC+7
 - CV (PDF): https://heybui.github.io/assets/certs/huy-bui-cv.pdf
 - GitHub: https://github.com/heybui
@@ -15,7 +15,7 @@ This site is a single-page portfolio. All content below is also on the live page
 
 ## Current role
 
-Senior Software Engineer / Squad Lead at CoverGo (insurance, 2024—now). Leads and builds the low-code product builder that lets insurers configure health, life, property and casualty products. Cut time-to-market for a new insurance product from a month to a week. Delivered data anonymisation and deletion modules for regulatory compliance. Designed a workflow wrapper around Temporal for composable customer journeys. Won the 2024 Innovator Award at CoverGo.
+Senior Software Engineer / Squad Lead at CoverGo (insurance, 2024—now). Leads and builds the low-code product builder that lets insurers configure health, life, property and casualty products. Cut time-to-market for a new insurance product from a month to a week. Designed a workflow wrapper around open source workflow engine for composable customer journeys. Won the 2024 Innovator Award at CoverGo.
 
 ## Experience history
 
