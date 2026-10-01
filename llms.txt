@@ -15,17 +15,23 @@ This site is a single-page portfolio. All content below is also on the live page
 
 ## Current role
 
-Senior Software Engineer / Squad Lead at CoverGo (insurance, 2024—now). Leads and builds the low-code product builder that lets insurers configure health, life, property and casualty products. Cut time-to-market for a new insurance product from a month to a week. Designed a workflow wrapper around open source workflow engine for composable customer journeys. Won the 2024 Innovator Award at CoverGo.
+Senior Software Engineer / Squad Lead at CoverGo (insurance, 2024—now). Leads and builds the low-code product builder that lets insurers configure health, life, property and casualty products, a core part of the distribution platform.
+
+- Cut time-to-market for a new insurance product from a month to a week.
+- Delivered data anonymisation and deletion modules (configuration, scheduling, reporting, UI) for regulatory compliance and tenant-specific data policy.
+- Designed the workflow wrapper around Temporal so customer journeys and background processing compose without bespoke plumbing.
+- Built customer and broker portal demos for three prospective clients; used Cursor with Claude models to speed up implementation by 40%.
+- Won the 2024 Innovator Award at CoverGo for product innovation.
 
 ## Experience history
 
-- 2024—now: Senior Software Engineer / Squad Lead, CoverGo (Insurance): Vue 3, NestJS, PostgreSQL, AWS, Temporal, Keycloak
-- 2023: Technical Lead, National Innovation Center (Government): Nuxt 3, NestJS, MongoDB, WordPress, AWS, Firebase
-- 2021—2023: Senior Software Engineer, Pangara AB (Platform/CMS): Vue.js, Node.js, Directus, Laravel, MySQL
-- 2020—2021: Team Leader, ICD Vietnam (E-commerce): Node.js, TypeScript, Express, Angular, Google App Engine
-- 2018—2020: Solution Architect & Pre-sale, FPT Software (Healthcare): PHP CodeIgniter, Vue.js, Laravel, Node.js, AWS Serverless, Swift
-- 2016—2018: Senior Software Engineer, NTT DATA (Healthcare): Java, Spring MVC, Oracle, Terasoluna
-- 2015: Software Programmer, FPT Information System (Enterprise/SAP): SAP ABAP
+- 2024—now: Senior Software Engineer / Squad Lead, CoverGo (Insurance): Vue 3, NestJS, PostgreSQL, AWS, Temporal, Keycloak. See Current role.
+- 2023: Technical Lead, National Innovation Center (Government): Nuxt 3, NestJS, MongoDB, WordPress, AWS, Firebase. Owned the business connect platform for Vietnam International Innovation Expo 2023, serving more than 15,000 visitors; recruited and managed a team of seven.
+- 2021—2023: Senior Software Engineer, Pangara AB (Platform/CMS): Vue.js, Node.js, Directus, Laravel, MySQL. Built a platform and no-code extensions on Directus; cut project development time from two weeks to three days.
+- 2020—2021: Team Leader, ICD Vietnam (E-commerce): Node.js, TypeScript, Express, Angular, Google App Engine. Led five engineers on a Japanese hypermarket group's e-commerce platform; cut a 32M-record data export from four hours to one and releases from four hours to thirty minutes.
+- 2018—2020: Solution Architect & Pre-sale, FPT Software (Healthcare): PHP CodeIgniter, Vue.js, Laravel, Node.js, AWS Serverless, Swift. Secured two $1M contracts (Korean dental company, Japanese PHR project); led four proofs of concept for Medical IT Expo Japan; trained more than fifty developers.
+- 2016—2018: Senior Software Engineer, NTT DATA (Healthcare): Java, Spring MVC, Oracle, Terasoluna. Led the MS SQL to Oracle migration for icashica.com, taking query time from ten seconds to one.
+- 2015: Software Programmer, FPT Information System (Enterprise/SAP): SAP ABAP. Technical documentation at 100% compliance with design review standards.
 
 ## Selected projects
 
@@ -49,5 +55,4 @@ Languages: TypeScript, JavaScript, PHP, Java. Frontend: Vue 3, Nuxt, React, Next
 
 ## Notes for automated readers
 
-- The page is available in English and Vietnamese (client-side toggle); this file describes the English content.
 - Full site source is a static HTML/CSS/JS page with no server-side rendering. https://heybui.github.io/ serves the complete content directly.

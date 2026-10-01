@@ -32,184 +32,292 @@
       'f.all': 'Tất cả', 'f.product': 'Sản phẩm', 'f.platform': 'Nền tảng', 'f.consulting': 'Tư vấn',
       'work.open': 'Xem website',
       'lbl.exp': 'Kinh nghiệm',
-      'exp.span': '2015 — 2026',
       'lbl.edu': 'Học vấn & Giải thưởng',
       'lbl.contact': 'Liên hệ',
       'contact.cv': 'CV / PDF',
       'cv.title': 'CV',
       'cv.download': 'Tải về',
-      'foot.colophon': 'Chữ IBM Plex · Làm với',
-      'foot.right': '© 2026'
+      'foot.colophon': 'Chữ IBM Plex · Làm với'
     }
   };
 
   /* Strings not in the markup, so they can't come from [data-i18n]. */
   const UI = {
-    en: { current: 'Current', expOn: 'Compact', expOff: 'Full', light: 'Light', dark: 'Dark',
-          toLight: 'Switch to light theme', toDark: 'Switch to dark theme', toLang: 'Chuyển sang tiếng Việt' },
-    vi: { current: 'Hiện tại', expOn: 'Rút gọn', expOff: 'Đầy đủ', light: 'Sáng', dark: 'Tối',
-          toLight: 'Chuyển sang chế độ sáng', toDark: 'Chuyển sang chế độ tối', toLang: 'Switch to English' }
+    en: {
+      current: 'Current', expOn: 'Compact', expOff: 'Full', light: 'Light', dark: 'Dark',
+      toLight: 'Switch to light theme', toDark: 'Switch to dark theme', toLang: 'Chuyển sang tiếng Việt'
+    },
+    vi: {
+      current: 'Hiện tại', expOn: 'Rút gọn', expOff: 'Đầy đủ', light: 'Sáng', dark: 'Tối',
+      toLight: 'Chuyển sang chế độ sáng', toDark: 'Chuyển sang chế độ tối', toLang: 'Switch to English'
+    }
   };
 
   /* cat: 'product' | 'platform' | 'consulting'   ·   url: '' hides the link button */
   const PROJECTS = [
-    { y:'2025', cat:'consulting', n:'Government Event Website & Registration', url:'https://hanoiconvention.org',
-      stack:'WordPress · Next.js · NestJS · K8s',
-      d:{ en:'CMS and online registration for the UN Convention against Cybercrime signing ceremony in Hanoi. Built with a government agency, from requirements through to on-premise deployment.',
-          vi:'CMS và cổng đăng ký trực tuyến cho lễ ký Công ước Liên Hợp Quốc về tội phạm mạng tại Hà Nội. Phối hợp cùng cơ quan nhà nước từ lúc lấy yêu cầu đến khi triển khai on-premise.' },
-      m:[['1,500+',{en:'Registrants',vi:'Đại biểu'}],['4 mo',{en:'Delivery',vi:'Thời gian'}]],
-      img:['/assets/projects/hanoi-convention/header.png',
-           '/assets/projects/hanoi-convention/portal.png',
-           '/assets/projects/hanoi-convention/full-page.png'] },
+    {
+      y: '2025', cat: 'consulting', n: 'Government Event Website & Registration', url: 'https://hanoiconvention.org',
+      stack: 'WordPress · Next.js · NestJS · K8s',
+      d: {
+        en: 'CMS and online registration for the UN Convention against Cybercrime signing ceremony in Hanoi. Built with a government agency, from requirements through to on-premise deployment.',
+        vi: 'CMS và cổng đăng ký trực tuyến cho lễ ký Công ước Liên Hợp Quốc về tội phạm mạng tại Hà Nội. Phối hợp cùng cơ quan nhà nước từ lúc lấy yêu cầu đến khi triển khai on-premise.'
+      },
+      m: [['1,500+', { en: 'Registrants', vi: 'Đại biểu' }], ['4 mo', { en: 'Delivery', vi: 'Thời gian' }]],
+      img: ['/assets/projects/hanoi-convention/header.png',
+        '/assets/projects/hanoi-convention/portal.png',
+        '/assets/projects/hanoi-convention/full-page.png']
+    },
 
-    { y:'2025', cat:'platform', n:'Booking & Reservation Module', url:'https://kasha.io',
-      stack:'NestJS · gRPC · RabbitMQ · Postgres',
-      d:{ en:'Booking module backend, architected from inception through design and implementation to MVP launch, with gRPC and RabbitMQ carrying traffic between services.',
-          vi:'Backend cho module đặt chỗ: tự dựng kiến trúc từ đầu, làm tới khi ra MVP. Các service giao tiếp với nhau qua gRPC và RabbitMQ.' },
-      m:[['MVP',{en:'Shipped',vi:'Đã ra mắt'}],['10 mo',{en:'Engagement',vi:'Thời gian'}]],
-      img:['/assets/projects/kasha/booking.jpg'] },
+    {
+      y: '2025', cat: 'platform', n: 'Booking & Reservation Module', url: 'https://kasha.io',
+      stack: 'NestJS · gRPC · RabbitMQ · Postgres',
+      d: {
+        en: 'Booking module backend, architected from inception through design and implementation to MVP launch, with gRPC and RabbitMQ carrying traffic between services.',
+        vi: 'Backend cho module đặt chỗ: tự dựng kiến trúc từ đầu, làm tới khi ra MVP. Các service giao tiếp với nhau qua gRPC và RabbitMQ.'
+      },
+      m: [['MVP', { en: 'Shipped', vi: 'Đã ra mắt' }], ['10 mo', { en: 'Engagement', vi: 'Thời gian' }]],
+      img: ['/assets/projects/kasha/booking.jpg']
+    },
 
-    { y:'2024', cat:'platform', n:'Insurance Product Builder', url:'https://covergo.com',
-      stack:'Vue 3 · NestJS · PostgreSQL · Keycloak',
-      d:{ en:'Low-code builder that lets insurers configure health, life, property and casualty products with minimal code, the core of the distribution platform.',
-          vi:'Builder low-code giúp công ty bảo hiểm tự cấu hình sản phẩm sức khoẻ, nhân thọ, tài sản và trách nhiệm mà gần như không cần viết code, là phần cốt lõi của nền tảng phân phối.' },
-      m:[['1 wk',{en:'Time to market',vi:'Thời gian ra mắt'}],['4',{en:'Insurance lines',vi:'Dòng sản phẩm'}]],
-      img:['/assets/projects/insurance-product-builder/full-page.png'] },
+    {
+      y: '2024', cat: 'platform', n: 'Insurance Product Builder', url: 'https://covergo.com',
+      stack: 'Vue 3 · NestJS · PostgreSQL · Keycloak',
+      d: {
+        en: 'Low-code builder that lets insurers configure health, life, property and casualty products with minimal code, the core of the distribution platform.',
+        vi: 'Builder low-code giúp công ty bảo hiểm tự cấu hình sản phẩm sức khoẻ, nhân thọ, tài sản và trách nhiệm mà gần như không cần viết code, là phần cốt lõi của nền tảng phân phối.'
+      },
+      m: [['1 wk', { en: 'Time to market', vi: 'Thời gian ra mắt' }], ['4', { en: 'Insurance lines', vi: 'Dòng sản phẩm' }]],
+      img: ['/assets/projects/insurance-product-builder/full-page.png']
+    },
 
-    { y:'2024', cat:'product', n:'Breezing.in - Event Management Platform', url:'https://breezing.in',
-      stack:'Nuxt 3 · NestJS · MongoDB · AWS',
-      d:{ en:'All-in-one event and booking platform, built as founding engineer from MVP through launch. Its offline check-in ran Saigon Summit 2024 with Tech in Asia.',
-          vi:'Nền tảng quản lý sự kiện và đặt chỗ all-in-one, xây từ MVP tới lúc ra mắt với vai trò founding engineer. Tính năng check-in offline được dùng cho Saigon Summit 2024 cùng Tech in Asia.' },
-      m:[['1,000+',{en:'Users',vi:'Người dùng'}],['3 mo',{en:'To launch',vi:'Đến khi ra mắt'}]],
-      img:['/assets/projects/breezing/header.png',
-           '/assets/projects/breezing/portal-1.png',
-           '/assets/projects/breezing/portal-2.png',
-           '/assets/projects/breezing/breezing-tia-2024.webp',
-           '/assets/projects/breezing/ads-1.jpg',
-           '/assets/projects/breezing/ads-2.jpg'] },
+    {
+      y: '2024', cat: 'product', n: 'Breezing.in - Event Management Platform', url: 'https://breezing.in',
+      stack: 'Nuxt 3 · NestJS · MongoDB · AWS',
+      d: {
+        en: 'All-in-one event and booking platform, built as founding engineer from MVP through launch. Its offline check-in ran Saigon Summit 2024 with Tech in Asia.',
+        vi: 'Nền tảng quản lý sự kiện và đặt chỗ all-in-one, xây từ MVP tới lúc ra mắt với vai trò founding engineer. Tính năng check-in offline được dùng cho Saigon Summit 2024 cùng Tech in Asia.'
+      },
+      m: [['1,000+', { en: 'Users', vi: 'Người dùng' }], ['3 mo', { en: 'To launch', vi: 'Đến khi ra mắt' }]],
+      img: ['/assets/projects/breezing/header.png',
+        '/assets/projects/breezing/portal-1.png',
+        '/assets/projects/breezing/portal-2.png',
+        '/assets/projects/breezing/breezing-tia-2024.webp',
+        '/assets/projects/breezing/ads-1.jpg',
+        '/assets/projects/breezing/ads-2.jpg']
+    },
 
-    { y:'2023', cat:'product', n:'Business Connect - Matchmaking Platform', url:'https://nic.gov.vn',
-      stack:'Nuxt 3 · NestJS · MongoDB · AWS',
-      d:{ en:'Business matchmaking platform for Vietnam International Innovation Expo 2023, owned end to end with a team of seven.',
-          vi:'Nền tảng kết nối doanh nghiệp cho Triển lãm Quốc tế Đổi mới sáng tạo Việt Nam 2023. Phụ trách trọn gói cùng đội bảy người.' },
-      m:[['15,000+',{en:'Expo visitors',vi:'Khách tham dự'}],['7',{en:'Engineers',vi:'Kỹ sư'}]],
-      img:['/assets/projects/nic-viie-2023/nic-2023.webp',
-           '/assets/projects/nic-viie-2023/full-page.jpg'] },
+    {
+      y: '2023', cat: 'product', n: 'Business Connect - Matchmaking Platform', url: 'https://nic.gov.vn',
+      stack: 'Nuxt 3 · NestJS · MongoDB · AWS',
+      d: {
+        en: 'Business matchmaking platform for Vietnam International Innovation Expo 2023, owned end to end with a team of seven.',
+        vi: 'Nền tảng kết nối doanh nghiệp cho Triển lãm Quốc tế Đổi mới sáng tạo Việt Nam 2023. Phụ trách trọn gói cùng đội bảy người.'
+      },
+      m: [['15,000+', { en: 'Expo visitors', vi: 'Khách tham dự' }], ['7', { en: 'Engineers', vi: 'Kỹ sư' }]],
+      img: ['/assets/projects/nic-viie-2023/nic-2023.webp',
+        '/assets/projects/nic-viie-2023/full-page.jpg']
+    },
 
-    { y:'2019', cat:'consulting', n:'Dental AI Imaging Project', url:'',
-      stack:'PHP · Vue.js · Laravel · AWS Serverless',
-      d:{ en:'AI-powered imaging tool and a microservices dental platform helping clinics diagnose more accurately. Covered architecture, pre-sales, and ten developers across two engagements.',
-          vi:'Công cụ xử lý ảnh bằng AI và nền tảng nha khoa dựng theo microservices, giúp phòng khám chẩn đoán chính xác hơn. Đảm nhận kiến trúc, pre-sales và điều phối mười lập trình viên qua hai dự án.' },
-      m:[['$1M',{en:'Contract won',vi:'Hợp đồng'}],['10',{en:'Developers',vi:'Lập trình viên'}]],
-      img:['/assets/projects/dental-ai-imaging/demo.png'] }
+    {
+      y: '2019', cat: 'consulting', n: 'Dental AI Imaging Project', url: '',
+      stack: 'PHP · Vue.js · Laravel · AWS Serverless',
+      d: {
+        en: 'AI-powered imaging tool and a microservices dental platform helping clinics diagnose more accurately. Covered architecture, pre-sales, and ten developers across two engagements.',
+        vi: 'Công cụ xử lý ảnh bằng AI và nền tảng nha khoa dựng theo microservices, giúp phòng khám chẩn đoán chính xác hơn. Đảm nhận kiến trúc, pre-sales và điều phối mười lập trình viên qua hai dự án.'
+      },
+      m: [['$1M', { en: 'Contract won', vi: 'Hợp đồng' }], ['10', { en: 'Developers', vi: 'Lập trình viên' }]],
+      img: ['/assets/projects/dental-ai-imaging/demo.png']
+    }
   ];
 
   const STACK = [
-    [{en:'Languages',vi:'Ngôn ngữ'}, ['TypeScript','JavaScript','PHP','Java']],
-    [{en:'Frontend',vi:'Frontend'}, ['Vue 3','Nuxt','React','Next.js','TailwindCSS','Vuetify','PrimeVue']],
-    [{en:'Backend',vi:'Backend'}, ['Node.js','NestJS','Express','Laravel','Spring MVC']],
-    [{en:'Data',vi:'Dữ liệu'}, ['PostgreSQL','MySQL','MongoDB','Redis','Oracle']],
-    [{en:'Cloud & DevOps',vi:'Cloud & DevOps'}, ['AWS','Docker','Kubernetes','GitHub Actions','Grafana','OpenTelemetry']],
-    [{en:'Integration',vi:'Tích hợp'}, ['REST','GraphQL','gRPC','RabbitMQ','Temporal']],
-    [{en:'AI & Testing',vi:'AI & Testing'}, ['Claude Code','Cursor','Copilot','Jest','Playwright']]
+    [{ en: 'Languages', vi: 'Ngôn ngữ' }, ['TypeScript', 'JavaScript', 'PHP', 'Java']],
+    [{ en: 'Frontend', vi: 'Frontend' }, ['Vue 3', 'Nuxt', 'React', 'Next.js', 'TailwindCSS', 'Vuetify', 'PrimeVue']],
+    [{ en: 'Backend', vi: 'Backend' }, ['Node.js', 'NestJS', 'Express', 'Laravel', 'Spring MVC']],
+    [{ en: 'Data', vi: 'Dữ liệu' }, ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Oracle']],
+    [{ en: 'Cloud & DevOps', vi: 'Cloud & DevOps' }, ['AWS', 'Docker', 'Kubernetes', 'GitHub Actions', 'Grafana', 'OpenTelemetry']],
+    [{ en: 'Integration', vi: 'Tích hợp' }, ['REST', 'GraphQL', 'gRPC', 'RabbitMQ', 'Temporal']],
+    [{ en: 'AI & Testing', vi: 'AI & Testing' }, ['Claude Code', 'Cursor', 'Copilot', 'Jest', 'Playwright']]
   ];
 
   /* Education and awards. d: year(s), t: title, m: short tag.
      img: scanned document(s) for the hover thumbnail and click-to-view popup —
      omitted where no scan exists. */
   const CREDENTIALS = [
-    { d:'2024', m:{en:'Award',vi:'Giải'},
-      t:{en:'Innovator Award for product innovation, CoverGo',
-         vi:'Giải Innovator về đổi mới sản phẩm, CoverGo'},
-      img:['/assets/certs/covergo-innovator-award.jpg'] },
-    { d:'2023', m:{en:'Award',vi:'Giải'},
-      t:{en:'Best Dissertation Award on remote-work productivity',
-         vi:'Giải Luận văn xuất sắc về năng suất làm việc từ xa'},
-      img:['/assets/certs/mba-cfvg-best-dissertation.jpg'] },
-    { d:'2021—23', m:{en:'Master',vi:'Thạc sĩ'},
-      t:{en:'Master of Business Administration, Université Paris 1 Panthéon-Sorbonne',
-         vi:'Thạc sĩ Quản trị Kinh doanh, Université Paris 1 Panthéon-Sorbonne'},
-      img:['/assets/certs/mba-paris-1-pantheon-sorbonne.jpg',
-           '/assets/certs/mba-iae-paris-sorbonne-business-school.jpg'] },
-    { d:'2011—15', m:{en:'Bachelor',vi:'Cử nhân'},
-      t:{en:'Bachelor of Engineering in Information Systems, FPT University',
-         vi:'Cử nhân Hệ thống thông tin, Đại học FPT'},
-      img:['/assets/certs/fptu-bachelor-degree.jpg'] }
+    {
+      d: '2024', m: { en: 'Award', vi: 'Giải' },
+      t: {
+        en: 'Innovator Award for product innovation, CoverGo',
+        vi: 'Giải Innovator về đổi mới sản phẩm, CoverGo'
+      },
+      img: ['/assets/certs/covergo-innovator-award.jpg']
+    },
+    {
+      d: '2023', m: { en: 'Award', vi: 'Giải' },
+      t: {
+        en: 'Best Dissertation Award on remote-work productivity',
+        vi: 'Giải Luận văn xuất sắc về năng suất làm việc từ xa'
+      },
+      img: ['/assets/certs/mba-cfvg-best-dissertation.jpg']
+    },
+    {
+      d: '2021—23', m: { en: 'Master', vi: 'Thạc sĩ' },
+      t: {
+        en: 'Master of Business Administration, Université Paris 1 Panthéon-Sorbonne',
+        vi: 'Thạc sĩ Quản trị Kinh doanh, Université Paris 1 Panthéon-Sorbonne'
+      },
+      img: ['/assets/certs/mba-paris-1-pantheon-sorbonne.jpg',
+        '/assets/certs/mba-iae-paris-sorbonne-business-school.jpg']
+    },
+    {
+      d: '2011—15', m: { en: 'Bachelor', vi: 'Cử nhân' },
+      t: {
+        en: 'Bachelor of Engineering in Information Systems, FPT University',
+        vi: 'Cử nhân Hệ thống thông tin, Đại học FPT'
+      },
+      img: ['/assets/certs/fptu-bachelor-degree.jpg']
+    }
   ];
 
   const EXP = [
-    { p:'2024 — ', pn:{en:'now',vi:'nay'}, r:{en:'Senior Software Engineer / Squad Lead',vi:'Kỹ sư phần mềm cấp cao / Trưởng nhóm'}, c:'CoverGo',
-      loc:{en:'Insurance',vi:'Bảo hiểm'}, s:'Vue 3 · NestJS · PostgreSQL · AWS · Temporal · Keycloak',
-      d:{ en:'Lead and build the low-code product builder that lets insurers configure health, life, property and casualty products, a core part of the distribution platform.',
-          vi:'Dẫn dắt và trực tiếp xây builder low-code, giúp công ty bảo hiểm tự cấu hình sản phẩm sức khoẻ, nhân thọ, tài sản và trách nhiệm, là phần cốt lõi của nền tảng phân phối.' },
-      b:[ { en:'Cut time-to-market for a new insurance product **from a month to a week**.',
-            vi:'Giảm thời gian đưa sản phẩm bảo hiểm mới ra thị trường **từ một tháng xuống một tuần**.' },
-          { en:'Delivered data anonymisation and deletion modules (configuration, scheduling, reporting, UI) for regulatory compliance and tenant-specific data policy.',
-            vi:'Xây module ẩn danh hoá và xoá dữ liệu (cấu hình, lên lịch, báo cáo, UI) phục vụ tuân thủ quy định và chính sách dữ liệu riêng của từng khách hàng.' },
-          { en:'Designed the workflow wrapper around Temporal so customer journeys and background processing compose without bespoke plumbing.',
-            vi:'Thiết kế lớp wrapper cho Temporal, để các luồng nghiệp vụ phức tạp (hành trình khách hàng, job chạy nền) ghép lại được mà không phải dựng lại từ đầu mỗi lần.' },
-          { en:'Built customer and broker portal demos with solution design for three prospective clients; used Cursor with Claude models to accelerate implementation by **40%**.',
-            vi:'Xây demo cổng khách hàng và cổng đại lý kèm thiết kế giải pháp cho ba khách hàng tiềm năng; dùng Cursor với các model Claude để tăng tốc triển khai **40%**.' },
-          { en:'Won the **2024 Innovator Award** at CoverGo for product innovation.',
-            vi:'Đạt **giải Innovator 2024** tại CoverGo cho đổi mới sản phẩm.' } ] },
+    {
+      p: '2024 — ', pn: { en: 'now', vi: 'nay' }, r: { en: 'Senior Software Engineer / Squad Lead', vi: 'Kỹ sư phần mềm cấp cao / Trưởng nhóm' }, c: 'CoverGo',
+      loc: { en: 'Insurance', vi: 'Bảo hiểm' }, s: 'Vue 3 · NestJS · PostgreSQL · AWS · Temporal · Keycloak',
+      d: {
+        en: 'Lead and build the low-code product builder that lets insurers configure health, life, property and casualty products, a core part of the distribution platform.',
+        vi: 'Dẫn dắt và trực tiếp xây builder low-code, giúp công ty bảo hiểm tự cấu hình sản phẩm sức khoẻ, nhân thọ, tài sản và trách nhiệm, là phần cốt lõi của nền tảng phân phối.'
+      },
+      b: [{
+        en: 'Cut time-to-market for a new insurance product **from a month to a week**.',
+        vi: 'Giảm thời gian đưa sản phẩm bảo hiểm mới ra thị trường **từ một tháng xuống một tuần**.'
+      },
+      {
+        en: 'Delivered data anonymisation and deletion modules (configuration, scheduling, reporting, UI) for regulatory compliance and tenant-specific data policy.',
+        vi: 'Xây module ẩn danh hoá và xoá dữ liệu (cấu hình, lên lịch, báo cáo, UI) phục vụ tuân thủ quy định và chính sách dữ liệu riêng của từng khách hàng.'
+      },
+      {
+        en: 'Designed the workflow wrapper around Temporal so customer journeys and background processing compose without bespoke plumbing.',
+        vi: 'Thiết kế lớp wrapper cho Temporal, để các luồng nghiệp vụ phức tạp (hành trình khách hàng, job chạy nền) ghép lại được mà không phải dựng lại từ đầu mỗi lần.'
+      },
+      {
+        en: 'Built customer and broker portal demos with solution design for three prospective clients; used Cursor with Claude models to accelerate implementation by **40%**.',
+        vi: 'Xây demo cổng khách hàng và cổng đại lý kèm thiết kế giải pháp cho ba khách hàng tiềm năng; dùng Cursor với các model Claude để tăng tốc triển khai **40%**.'
+      },
+      {
+        en: 'Won the **2024 Innovator Award** at CoverGo for product innovation.',
+        vi: 'Đạt **giải Innovator 2024** tại CoverGo cho đổi mới sản phẩm.'
+      }]
+    },
 
-    { p:'2023', pn:{en:'',vi:''}, r:{en:'Technical Lead',vi:'Trưởng nhóm kỹ thuật'}, c:'National Innovation Center',
-      loc:{en:'Government',vi:'Khu vực công'}, s:'Nuxt 3 · NestJS · MongoDB · WordPress · AWS · Firebase',
-      d:{ en:'Owned every part of the product lifecycle for the business connect platform behind Vietnam International Innovation Expo 2023.',
-          vi:'Phụ trách toàn bộ vòng đời sản phẩm của nền tảng kết nối doanh nghiệp cho Triển lãm Quốc tế Đổi mới sáng tạo Việt Nam 2023.' },
-      b:[ { en:'Delivered a platform that supported more than **15,000 visitors** during the expo.',
-            vi:'Xây nền tảng phục vụ hơn **15.000 khách tham dự** trong suốt triển lãm.' },
-          { en:'Recruited and managed a team of **seven**, establishing coding standards and development process from scratch.',
-            vi:'Tuyển và quản lý đội **bảy người**, thiết lập chuẩn code và quy trình phát triển từ đầu.' },
-          { en:'Ran product demonstrations and fed customer feedback back into the roadmap with the team.',
-            vi:'Trình bày sản phẩm và cùng đội đưa phản hồi khách hàng vào lộ trình phát triển.' } ] },
+    {
+      p: '2023', pn: { en: '', vi: '' }, r: { en: 'Technical Lead', vi: 'Trưởng nhóm kỹ thuật' }, c: 'National Innovation Center',
+      loc: { en: 'Government', vi: 'Khu vực công' }, s: 'Nuxt 3 · NestJS · MongoDB · WordPress · AWS · Firebase',
+      d: {
+        en: 'Owned every part of the product lifecycle for the business connect platform behind Vietnam International Innovation Expo 2023.',
+        vi: 'Phụ trách toàn bộ vòng đời sản phẩm của nền tảng kết nối doanh nghiệp cho Triển lãm Quốc tế Đổi mới sáng tạo Việt Nam 2023.'
+      },
+      b: [{
+        en: 'Delivered a platform that supported more than **15,000 visitors** during the expo.',
+        vi: 'Xây nền tảng phục vụ hơn **15.000 khách tham dự** trong suốt triển lãm.'
+      },
+      {
+        en: 'Recruited and managed a team of **seven**, establishing coding standards and development process from scratch.',
+        vi: 'Tuyển và quản lý đội **bảy người**, thiết lập chuẩn code và quy trình phát triển từ đầu.'
+      },
+      {
+        en: 'Ran product demonstrations and fed customer feedback back into the roadmap with the team.',
+        vi: 'Trình bày sản phẩm và cùng đội đưa phản hồi khách hàng vào lộ trình phát triển.'
+      }]
+    },
 
-    { p:'2021 — 2023', pn:{en:'',vi:''}, r:{en:'Senior Software Engineer',vi:'Kỹ sư phần mềm cấp cao'}, c:'Pangara AB',
-      loc:{en:'Platform / CMS',vi:'Nền tảng / CMS'}, s:'Vue.js · Node.js · Directus · Laravel · MySQL',
-      d:{ en:'Built and customised a platform on the Directus headless CMS, and the extensions that made it usable by people who do not write code.',
-          vi:'Xây và tuỳ biến nền tảng trên headless CMS Directus, kèm các extension để người không biết code vẫn dùng được.' },
-      b:[ { en:'Cut project development time **from two weeks to three days**.',
-            vi:'Giảm thời gian phát triển dự án **từ hai tuần xuống ba ngày**.' },
-          { en:'Created custom extensions letting non-technical users build complex workflows and data management themselves.',
-            vi:'Viết extension tuỳ biến để người không chuyên tự dựng workflow phức tạp và tự quản lý dữ liệu.' } ] },
+    {
+      p: '2021 — 2023', pn: { en: '', vi: '' }, r: { en: 'Senior Software Engineer', vi: 'Kỹ sư phần mềm cấp cao' }, c: 'Pangara AB',
+      loc: { en: 'Platform / CMS', vi: 'Nền tảng / CMS' }, s: 'Vue.js · Node.js · Directus · Laravel · MySQL',
+      d: {
+        en: 'Built and customised a platform on the Directus headless CMS, and the extensions that made it usable by people who do not write code.',
+        vi: 'Xây và tuỳ biến nền tảng trên headless CMS Directus, kèm các extension để người không biết code vẫn dùng được.'
+      },
+      b: [{
+        en: 'Cut project development time **from two weeks to three days**.',
+        vi: 'Giảm thời gian phát triển dự án **từ hai tuần xuống ba ngày**.'
+      },
+      {
+        en: 'Created custom extensions letting non-technical users build complex workflows and data management themselves.',
+        vi: 'Viết extension tuỳ biến để người không chuyên tự dựng workflow phức tạp và tự quản lý dữ liệu.'
+      }]
+    },
 
-    { p:'2020 — 2021', pn:{en:'',vi:''}, r:{en:'Team Leader',vi:'Trưởng nhóm'}, c:'ICD Vietnam',
-      loc:{en:'E-commerce',vi:'Thương mại điện tử'}, s:'Node.js · TypeScript · Express · Angular · Google App Engine',
-      d:{ en:'Built and led the team behind a Japanese hypermarket group’s e-commerce platform.',
-          vi:'Xây dựng và dẫn dắt đội phát triển nền tảng thương mại điện tử cho tập đoàn đại siêu thị Nhật Bản.' },
-      b:[ { en:'Hired and led **five engineers**, shipping five major modules: pickup, sales reporting, reservations and loyalty campaigns.',
-            vi:'Tuyển và dẫn dắt **năm kỹ sư**, hoàn thành năm module lớn: nhận hàng tại quầy, báo cáo bán hàng, đặt trước và chương trình khách hàng thân thiết.' },
-          { en:'Optimised a data export handling more than **32M records**, from **four hours down to one**.',
-            vi:'Tối ưu quy trình xuất dữ liệu hơn **32 triệu bản ghi**, từ **bốn giờ xuống còn một giờ**.' },
-          { en:'Automated the deployment pipeline, taking releases from **four hours to thirty minutes**.',
-            vi:'Tự động hoá pipeline triển khai, giảm thời gian phát hành từ **bốn giờ xuống ba mươi phút**.' } ] },
+    {
+      p: '2020 — 2021', pn: { en: '', vi: '' }, r: { en: 'Team Leader', vi: 'Trưởng nhóm' }, c: 'ICD Vietnam',
+      loc: { en: 'E-commerce', vi: 'Thương mại điện tử' }, s: 'Node.js · TypeScript · Express · Angular · Google App Engine',
+      d: {
+        en: 'Built and led the team behind a Japanese hypermarket group’s e-commerce platform.',
+        vi: 'Xây dựng và dẫn dắt đội phát triển nền tảng thương mại điện tử cho tập đoàn đại siêu thị Nhật Bản.'
+      },
+      b: [{
+        en: 'Hired and led **five engineers**, shipping five major modules: pickup, sales reporting, reservations and loyalty campaigns.',
+        vi: 'Tuyển và dẫn dắt **năm kỹ sư**, hoàn thành năm module lớn: nhận hàng tại quầy, báo cáo bán hàng, đặt trước và chương trình khách hàng thân thiết.'
+      },
+      {
+        en: 'Optimised a data export handling more than **32M records**, from **four hours down to one**.',
+        vi: 'Tối ưu quy trình xuất dữ liệu hơn **32 triệu bản ghi**, từ **bốn giờ xuống còn một giờ**.'
+      },
+      {
+        en: 'Automated the deployment pipeline, taking releases from **four hours to thirty minutes**.',
+        vi: 'Tự động hoá pipeline triển khai, giảm thời gian phát hành từ **bốn giờ xuống ba mươi phút**.'
+      }]
+    },
 
-    { p:'2018 — 2020', pn:{en:'',vi:''}, r:{en:'Solution Architect & Pre-sale',vi:'Solution Architect & Pre-sales'}, c:'FPT Software',
-      loc:{en:'Healthcare',vi:'Y tế'}, s:'PHP CodeIgniter · Vue.js · Laravel · Node.js · AWS Serverless · Swift',
-      d:{ en:'Architected healthcare products and sold them: an AI-powered imaging tool and a microservices dental platform, across ten developers and two major engagements.',
-          vi:'Vừa thiết kế kiến trúc vừa làm pre-sales cho các sản phẩm y tế: công cụ xử lý ảnh bằng AI và nền tảng nha khoa microservices, cùng mười lập trình viên qua hai dự án lớn.' },
-      b:[ { en:'Secured a **$1M contract** with the top Korean dental company, and a **$1M PHR project** from a top-two medical equipment maker after on-site consultation in Japan.',
-            vi:'Chốt **hợp đồng 1 triệu USD** với công ty nha khoa hàng đầu Hàn Quốc, và **dự án PHR 1 triệu USD** từ nhà sản xuất thiết bị y tế top 2 sau khi tư vấn trực tiếp tại Nhật.' },
-          { en:'Led four proofs of concept for Medical IT Expo Japan: a PHR app, an EMR platform, blockchain medical records and an AR mobile game.',
-            vi:'Dẫn dắt bốn bản PoC cho Medical IT Expo Nhật Bản: ứng dụng PHR, nền tảng EMR, quản lý dữ liệu y tế trên blockchain và game AR trên di động.' },
-          { en:'Ran technical workshops and sharing sessions for more than **fifty developers** and technical leads.',
-            vi:'Tổ chức workshop và buổi chia sẻ kỹ thuật cho hơn **năm mươi lập trình viên** và trưởng nhóm.' } ] },
+    {
+      p: '2018 — 2020', pn: { en: '', vi: '' }, r: { en: 'Solution Architect & Pre-sale', vi: 'Solution Architect & Pre-sales' }, c: 'FPT Software',
+      loc: { en: 'Healthcare', vi: 'Y tế' }, s: 'PHP CodeIgniter · Vue.js · Laravel · Node.js · AWS Serverless · Swift',
+      d: {
+        en: 'Architected healthcare products and sold them: an AI-powered imaging tool and a microservices dental platform, across ten developers and two major engagements.',
+        vi: 'Vừa thiết kế kiến trúc vừa làm pre-sales cho các sản phẩm y tế: công cụ xử lý ảnh bằng AI và nền tảng nha khoa microservices, cùng mười lập trình viên qua hai dự án lớn.'
+      },
+      b: [{
+        en: 'Secured a **$1M contract** with the top Korean dental company, and a **$1M PHR project** from a top-two medical equipment maker after on-site consultation in Japan.',
+        vi: 'Chốt **hợp đồng 1 triệu USD** với công ty nha khoa hàng đầu Hàn Quốc, và **dự án PHR 1 triệu USD** từ nhà sản xuất thiết bị y tế top 2 sau khi tư vấn trực tiếp tại Nhật.'
+      },
+      {
+        en: 'Led four proofs of concept for Medical IT Expo Japan: a PHR app, an EMR platform, blockchain medical records and an AR mobile game.',
+        vi: 'Dẫn dắt bốn bản PoC cho Medical IT Expo Nhật Bản: ứng dụng PHR, nền tảng EMR, quản lý dữ liệu y tế trên blockchain và game AR trên di động.'
+      },
+      {
+        en: 'Ran technical workshops and sharing sessions for more than **fifty developers** and technical leads.',
+        vi: 'Tổ chức workshop và buổi chia sẻ kỹ thuật cho hơn **năm mươi lập trình viên** và trưởng nhóm.'
+      }]
+    },
 
-    { p:'2016 — 2018', pn:{en:'',vi:''}, r:{en:'Senior Software Engineer',vi:'Kỹ sư phần mềm cấp cao'}, c:'NTT DATA',
-      loc:{en:'Healthcare',vi:'Y tế'}, s:'Java · Spring MVC · Oracle · Terasoluna',
-      d:{ en:'Built clinic search and integrated maps for the icashica.com dental marketplace, and moved the database underneath it.',
-          vi:'Xây tính năng tìm phòng khám và tích hợp bản đồ cho sàn nha khoa icashica.com, đồng thời chuyển đổi cơ sở dữ liệu bên dưới.' },
-      b:[ { en:'Led the migration from MS SQL to Oracle, taking query time from **ten seconds to one**.',
-            vi:'Dẫn dắt việc chuyển từ MS SQL sang Oracle, giảm thời gian truy vấn từ **mười giây xuống một giây**.' },
-          { en:'Mentored junior developers and ran knowledge-transfer sessions for the team.',
-            vi:'Kèm cặp lập trình viên mới và tổ chức các buổi chuyển giao kiến thức cho đội.' } ] },
+    {
+      p: '2016 — 2018', pn: { en: '', vi: '' }, r: { en: 'Senior Software Engineer', vi: 'Kỹ sư phần mềm cấp cao' }, c: 'NTT DATA',
+      loc: { en: 'Healthcare', vi: 'Y tế' }, s: 'Java · Spring MVC · Oracle · Terasoluna',
+      d: {
+        en: 'Built clinic search and integrated maps for the icashica.com dental marketplace, and moved the database underneath it.',
+        vi: 'Xây tính năng tìm phòng khám và tích hợp bản đồ cho sàn nha khoa icashica.com, đồng thời chuyển đổi cơ sở dữ liệu bên dưới.'
+      },
+      b: [{
+        en: 'Led the migration from MS SQL to Oracle, taking query time from **ten seconds to one**.',
+        vi: 'Dẫn dắt việc chuyển từ MS SQL sang Oracle, giảm thời gian truy vấn từ **mười giây xuống một giây**.'
+      },
+      {
+        en: 'Mentored junior developers and ran knowledge-transfer sessions for the team.',
+        vi: 'Kèm cặp lập trình viên mới và tổ chức các buổi chuyển giao kiến thức cho đội.'
+      }]
+    },
 
-    { p:'2015', pn:{en:'',vi:''}, r:{en:'Software Programmer',vi:'Lập trình viên'}, c:'FPT Information System',
-      loc:{en:'Enterprise / SAP',vi:'Doanh nghiệp / SAP'}, s:'SAP ABAP',
-      d:{ en:'First role: custom programs built from customer requirements and basic design specifications.',
-          vi:'Công việc đầu tiên: viết các chương trình theo yêu cầu khách hàng và tài liệu thiết kế cơ bản.' },
-      b:[ { en:'Wrote and maintained technical documentation at **100% compliance** with design review standards.',
-            vi:'Viết và duy trì tài liệu kỹ thuật đạt **100% yêu cầu** của chuẩn design review.' } ] }
+    {
+      p: '2015', pn: { en: '', vi: '' }, r: { en: 'Software Programmer', vi: 'Lập trình viên' }, c: 'FPT Information System',
+      loc: { en: 'Enterprise / SAP', vi: 'Doanh nghiệp / SAP' }, s: 'SAP ABAP',
+      d: {
+        en: 'First role: custom programs built from customer requirements and basic design specifications.',
+        vi: 'Công việc đầu tiên: viết các chương trình theo yêu cầu khách hàng và tài liệu thiết kế cơ bản.'
+      },
+      b: [{
+        en: 'Wrote and maintained technical documentation at **100% compliance** with design review standards.',
+        vi: 'Viết và duy trì tài liệu kỹ thuật đạt **100% yêu cầu** của chuẩn design review.'
+      }]
+    }
   ];
 
   /* --- state ---------------------------------------------------------------- */
@@ -257,6 +365,7 @@
         state.en[el.getAttribute('data-i18n')] = el.textContent;
       });
       DICT.en = state.en;
+      root.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 
       // A saved choice wins; CONFIG is only the first-visit default.
       const saved = readPrefs();
