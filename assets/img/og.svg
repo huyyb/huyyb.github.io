@@ -29,9 +29,9 @@
 
   <line x1="120" y1="402" x2="784" y2="402" stroke="#d5dade" stroke-width="1"/>
 
-  <text x="120" y="446" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#14202d">Ten years building web platforms end to end —</text>
-  <text x="120" y="478" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#14202d">across e-commerce, healthcare and insurance.</text>
-  <text x="120" y="510" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#14202d">Lately: low-code, workflows, AI in the loop.</text>
+  <text x="120" y="446" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#14202d">I love building tools and products.</text>
+  <text x="120" y="478" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#14202d">Experience: insurance, healthcare, e-commerce.</text>
+  <text x="120" y="510" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#14202d">Focus: low-code, workflows, AI in the loop.</text>
 
   <rect x="852" y="196" width="220" height="220" rx="2" fill="#f3f6f8" stroke="#d5dade" stroke-width="1"/>
   <image x="853" y="197" width="218" height="218" href="profile.png" preserveAspectRatio="xMidYMid slice"/>

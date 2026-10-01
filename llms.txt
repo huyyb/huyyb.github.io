@@ -1,14 +1,14 @@
 # Huy Bui
 
-> Technical consultant & Full-stack engineer based in Ho Chi Minh City, Vietnam. Ten years building web platforms end to end across e-commerce, healthcare and insurance.
+> Technical consultant & Full-stack engineer based in Ho Chi Minh City, Vietnam. Loves building tools and products, with experience in insurance, healthcare and e-commerce. Specialises in low-code product builders, workflow orchestration and shipping with AI in the loop.
 
-This site is a single-page portfolio. All content below is also on the live page at https://heybui.github.io/ — this file is a plain-text summary for language models and other automated readers.
+This site is a single-page portfolio. All content below is also on the live page at https://heybui.github.io/. This file is a plain-text summary for language models and other automated readers.
 
 ## Profile
 
 - Name: Huy Bui
 - Role: Senior / Lead Software Engineer
-- Location: Binh Thanh, Ho Chi Minh City, Vietnam — UTC+7
+- Location: Binh Thanh, Ho Chi Minh City, Vietnam (UTC+7)
 - CV (PDF): https://heybui.github.io/assets/certs/huy-bui-cv.pdf
 - GitHub: https://github.com/heybui
 - LinkedIn: https://linkedin.com/in/heybui
@@ -19,13 +19,13 @@ Senior Software Engineer / Squad Lead at CoverGo (insurance, 2024—now). Leads 
 
 ## Experience history
 
-- 2024—now: Senior Software Engineer / Squad Lead, CoverGo (Insurance) — Vue 3, NestJS, PostgreSQL, AWS, Temporal, Keycloak
-- 2023: Technical Lead, National Innovation Center (Government) — Nuxt 3, NestJS, MongoDB, WordPress, AWS, Firebase
-- 2021—2023: Senior Software Engineer, Pangara AB (Platform/CMS) — Vue.js, Node.js, Directus, Laravel, MySQL
-- 2020—2021: Team Leader, ICD Vietnam (E-commerce) — Node.js, TypeScript, Express, Angular, Google App Engine
-- 2018—2020: Solution Architect & Pre-sale, FPT Software (Healthcare) — PHP CodeIgniter, Vue.js, Laravel, Node.js, AWS Serverless, Swift
-- 2016—2018: Senior Software Engineer, NTT DATA (Healthcare) — Java, Spring MVC, Oracle, Terasoluna
-- 2015: Software Programmer, FPT Information System (Enterprise/SAP) — SAP ABAP
+- 2024—now: Senior Software Engineer / Squad Lead, CoverGo (Insurance): Vue 3, NestJS, PostgreSQL, AWS, Temporal, Keycloak
+- 2023: Technical Lead, National Innovation Center (Government): Nuxt 3, NestJS, MongoDB, WordPress, AWS, Firebase
+- 2021—2023: Senior Software Engineer, Pangara AB (Platform/CMS): Vue.js, Node.js, Directus, Laravel, MySQL
+- 2020—2021: Team Leader, ICD Vietnam (E-commerce): Node.js, TypeScript, Express, Angular, Google App Engine
+- 2018—2020: Solution Architect & Pre-sale, FPT Software (Healthcare): PHP CodeIgniter, Vue.js, Laravel, Node.js, AWS Serverless, Swift
+- 2016—2018: Senior Software Engineer, NTT DATA (Healthcare): Java, Spring MVC, Oracle, Terasoluna
+- 2015: Software Programmer, FPT Information System (Enterprise/SAP): SAP ABAP
 
 ## Selected projects
 
@@ -42,12 +42,12 @@ Languages: TypeScript, JavaScript, PHP, Java. Frontend: Vue 3, Nuxt, React, Next
 
 ## Education & awards
 
-- 2024: Innovator Award — product innovation, CoverGo
-- 2023: Best Dissertation Award — remote-work productivity
-- 2021—23: Master of Business Administration — Université Paris 1 Panthéon-Sorbonne
-- 2011—15: Bachelor of Engineering, Information Systems — FPT University
+- 2024: Innovator Award for product innovation, CoverGo
+- 2023: Best Dissertation Award on remote-work productivity
+- 2021—23: Master of Business Administration, Université Paris 1 Panthéon-Sorbonne
+- 2011—15: Bachelor of Engineering in Information Systems, FPT University
 
 ## Notes for automated readers
 
 - The page is available in English and Vietnamese (client-side toggle); this file describes the English content.
-- Full site source is a static HTML/CSS/JS page with no server-side rendering — https://heybui.github.io/ serves the complete content directly.
+- Full site source is a static HTML/CSS/JS page with no server-side rendering. https://heybui.github.io/ serves the complete content directly.
