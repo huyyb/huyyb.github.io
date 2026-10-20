@@ -2,15 +2,15 @@
 
 > Technical consultant & Full-stack engineer based in Ho Chi Minh City, Vietnam. Loves building tools and products, with experience in insurance, healthcare and e-commerce. Specialises in low-code product builders, workflow orchestration and shipping with AI in the loop.
 
-This site is a single-page portfolio. All content below is also on the live page at https://heybui.github.io/. This file is a plain-text summary for language models and other automated readers.
+This site is a single-page portfolio. All content below is also on the live page at https://huyyb.github.io/. This file is a plain-text summary for language models and other automated readers.
 
 ## Profile
 
 - Name: Huy Bui
 - Role: Senior / Lead Software Engineer
 - Location: Binh Thanh, Ho Chi Minh City, Vietnam (UTC+7)
-- CV (PDF): https://heybui.github.io/assets/certs/huy-bui-cv.pdf
-- GitHub: https://github.com/heybui
+- CV (PDF): https://huyyb.github.io/assets/certs/huy-bui-cv.pdf
+- GitHub: https://github.com/huyyb
 - LinkedIn: https://linkedin.com/in/heybui
 
 ## Current role
@@ -55,4 +55,4 @@ Languages: TypeScript, JavaScript, PHP, Java. Frontend: Vue 3, Nuxt, React, Next
 
 ## Notes for automated readers
 
-- Full site source is a static HTML/CSS/JS page with no server-side rendering. https://heybui.github.io/ serves the complete content directly.
+- Full site source is a static HTML/CSS/JS page with no server-side rendering. https://huyyb.github.io/ serves the complete content directly.

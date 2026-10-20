@@ -1,6 +1,6 @@
-# heybui.github.io
+# huyyb.github.io
 
-My personal site. Live at <https://heybui.github.io/>
+My personal site. Live at <https://huyyb.github.io/>
 
 Static HTML, CSS and one JS file. No build step, no dependencies.
 
