@@ -1,5 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <!-- Source for og.png. Regenerate with the Chrome headless command in README.md. -->
+  <!-- IBM Plex comes from Google Fonts, so rendering needs a network connection. -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;700&amp;display=block');
+    .sans{font-family:'IBM Plex Sans',Helvetica,Arial,sans-serif}
+    .mono{font-family:'IBM Plex Mono',Menlo,monospace}
+  </style>
   <defs>
     <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
       <path d="M48 0H0v48" fill="none" stroke="#e2e7eb" stroke-width="1"/>
@@ -9,33 +15,20 @@
   <rect width="1200" height="630" fill="#f3f6f8"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
 
-  <rect x="72" y="72" width="1056" height="486" rx="4" fill="#ffffff" stroke="#d5dade" stroke-width="1"/>
-  <line x1="72" y1="145" x2="1128" y2="145" stroke="#d5dade" stroke-width="1"/>
+  <rect x="80" y="86" width="14" height="14" fill="#cc3430"/>
+  <text x="110" y="99" class="mono" font-size="20" font-weight="500" letter-spacing="3" fill="#6f7983">SOFTWARE BUILDER</text>
 
-  <text x="120" y="113" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="19" font-weight="500" letter-spacing="3" fill="#14202d">HUY BUI</text>
-  <text x="238" y="113" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="19" font-weight="500" fill="#cc3430">.</text>
-  <text x="272" y="113" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="19" font-weight="500" letter-spacing="3" fill="#6f7983">SENIOR / LEAD SOFTWARE ENGINEER</text>
+  <text x="72" y="292" class="sans" font-size="150" font-weight="700" letter-spacing="-5" fill="#14202d">Huy Bui<tspan fill="#cc3430">.</tspan></text>
+  <text x="80" y="366" class="sans" font-size="34" font-weight="500" fill="#14202d">Senior / lead software engineer</text>
+  <text x="80" y="414" class="sans" font-size="34" font-weight="400" fill="#6f7983">Low-code · Workflows · AI in the loop</text>
 
+  <rect x="808" y="86" width="312" height="312" fill="#f2f6f9" stroke="#c9d0d6" stroke-width="1"/>
+  <image x="809" y="87" width="310" height="310" href="profile.png"/>
   <g stroke="#14202d" stroke-width="2" stroke-linecap="square">
-    <path d="M1043 96v15M1043 131v15M1018 121h15M1053 121h15"/>
+    <path d="M1120 62v14M1120 96v14M1096 86h14M1130 86h14"/>
   </g>
-  <rect x="1035" y="113" width="16" height="16" fill="#cc3430"/>
 
-  <line x1="784" y1="145" x2="784" y2="558" stroke="#d5dade" stroke-width="1"/>
-
-  <text x="120" y="278" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="80" font-weight="700" letter-spacing="-2.4" fill="#14202d">Huy Bui</text>
-  <text x="120" y="326" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="24" font-weight="400" fill="#6f7983">Senior software engineer · Squad lead</text>
-  <text x="120" y="356" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="24" font-weight="400" fill="#6f7983">Ho Chi Minh City</text>
-
-  <line x1="120" y1="402" x2="784" y2="402" stroke="#d5dade" stroke-width="1"/>
-
-  <text x="120" y="446" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#14202d">I love building tools and products.</text>
-  <text x="120" y="478" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#14202d">Experience: insurance, healthcare, e-commerce.</text>
-  <text x="120" y="510" font-family="'IBM Plex Sans',Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#14202d">Focus: low-code, workflows, AI in the loop.</text>
-
-  <rect x="852" y="196" width="220" height="220" rx="2" fill="#f3f6f8" stroke="#d5dade" stroke-width="1"/>
-  <image x="853" y="197" width="218" height="218" href="profile.png" preserveAspectRatio="xMidYMid slice"/>
-  <rect x="852" y="196" width="220" height="220" rx="2" fill="none" stroke="#d5dade" stroke-width="1"/>
-
-  <text x="852" y="450" font-family="'IBM Plex Mono',Menlo,monospace" font-size="17" font-weight="400" letter-spacing="1" fill="#6f7983">huyyb.github.io</text>
+  <line x1="80" y1="500" x2="1120" y2="500" stroke="#c9d0d6" stroke-width="1"/>
+  <text x="80" y="550" class="mono" font-size="24" font-weight="500" fill="#14202d">huyyb.github.io</text>
+  <text x="1120" y="550" text-anchor="end" class="mono" font-size="24" font-weight="400" fill="#6f7983">Ho Chi Minh City · UTC+7</text>
 </svg>

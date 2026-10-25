@@ -66,9 +66,13 @@ To re-render the social card after editing `og.svg`:
 ```sh
 google-chrome \
   --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 \
-  --window-size=1200,630 --screenshot="$PWD/assets/img/og.png" \
+  --window-size=1200,630 --virtual-time-budget=10000 \
+  --screenshot="$PWD/assets/img/og.png" \
   "file://$PWD/assets/img/og.svg"
 ```
+
+`--virtual-time-budget` gives the IBM Plex `@import` in `og.svg` time to load;
+without it (or offline) the card silently falls back to Helvetica/Arial.
 
 On macOS, `google-chrome` is the `Google Chrome.app` binary — either put it on
 your `PATH` or replace it with the full path into `Google Chrome.app/Contents/MacOS/`.
