@@ -11,7 +11,7 @@ This site is a single-page portfolio. All content below is also on the live page
 - Location: Binh Thanh, Ho Chi Minh City, Vietnam (UTC+7)
 - CV (PDF): https://huyyb.github.io/assets/certs/huy-bui-cv.pdf
 - GitHub: https://github.com/huyyb
-- LinkedIn: https://linkedin.com/in/heybui
+- LinkedIn: https://linkedin.com/in/huyyb
 
 ## Current role
 
