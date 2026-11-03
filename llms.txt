@@ -12,6 +12,7 @@ This site is a single-page portfolio. All content below is also on the live page
 - CV (PDF): https://huyyb.github.io/assets/certs/huy-bui-cv.pdf
 - GitHub: https://github.com/huyyb
 - LinkedIn: https://linkedin.com/in/huyyb
+- X: https://x.com/huyybX
 
 ## Current role
 
